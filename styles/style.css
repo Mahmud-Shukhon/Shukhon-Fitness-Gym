@@ -1,0 +1,125 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#sitelogo {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+#sitelogo img {
+    height: 120px;
+    width: 152px;
+}
+
+#navbar {
+    height: 120px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-list {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-list-item {
+    margin: 17px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    font-style: normal;
+}
+
+#navbar-list li :hover {
+    border-top: rgb(253, 79, 80) solid 3px;
+    color: rgb(253, 79, 80);
+}
+
+#top-banner {
+    height: 100vh;
+    color: rgba(253, 79, 79, 0.896);
+
+    background: url(../media/images/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bannertexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btext1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+#btext2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#top-button-container {
+    display: flex;
+}
+
+.top-button {
+    margin: 5px;
+    padding: 5px;
+}
+
+.top-button button {
+    background-color: rgb(253, 79, 80);
+    color: white;
+    font-weight: 500;
+    border: none;
+    height: 42px;
+    width: 155px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.top-button button:hover {
+    transform: scale(1.1);
+    transition: ease-in;
+}
