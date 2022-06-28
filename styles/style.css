@@ -108,7 +108,7 @@ body {
     padding: 5px;
 }
 
-.top-button button {
+button {
     background-color: rgb(253, 79, 80);
     color: white;
     font-weight: 500;
@@ -119,7 +119,100 @@ body {
     cursor: pointer;
 }
 
-.top-button button:hover {
+button:hover {
     transform: scale(1.1);
     transition: ease-in;
+}
+
+/* MTE-Section */
+
+#MTE {
+    color: rgb(253, 79, 80);
+}
+
+#MTE-title {
+    background-color: rgb(253, 79, 80);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MTE-title p {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#partners {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#partners ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#partners ul img {
+    height: 40px;
+}
+
+/* MTE-Section */
+
+#MTE-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/images/MTE-bannerbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: black;
+    position: relative;
+    z-index: 0;
+}
+
+#MTE-banner:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f9f9f9db;
+    height: 100%;
+    z-index: -1;
+}
+
+.MTE-card {
+    height: 400px;
+    width: 300px;
+    margin: 0px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.MTE-card div h5 {
+    color: rgb(253, 79, 80);
+    margin: 10px 0px;
+}
+
+.MTE-card div p {
+    color: rgba(106, 106, 106, 0.911);
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
 }
