@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -215,4 +219,56 @@ button:hover {
 
 .container {
     display: flex;
+}
+
+/* Results Section */
+
+#Results-Section {
+    background-color: aliceblue;
+    margin: 0 0 100px 0;
+    padding: 30px;
+}
+
+#caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+#caption h1 {
+    font-size: 40px;
+}
+
+.Result-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.result-card {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: white;
+
+}
+
+.result-card:nth-child(n+1) {
+    margin-right: 30px;
+}
+
+.card_inner {
+
+    padding: 30px 20px;
+}
+
+.result-card img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    min-height: 380px;
 }
